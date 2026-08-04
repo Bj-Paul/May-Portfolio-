@@ -1,0 +1,433 @@
+/* ==========================================
+   Portfolio Animations
+   Author: BJ Paul Cabunilas
+========================================== */
+
+/* ===========================
+   Fade In Up
+=========================== */
+
+@keyframes fadeUp {
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+/* ===========================
+   Fade In Left
+=========================== */
+
+@keyframes fadeLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.fade-left{
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+/* ===========================
+   Fade In Right
+=========================== */
+
+@keyframes fadeRight{
+
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.fade-right{
+
+    animation:fadeRight .8s ease forwards;
+
+}
+
+/* ===========================
+   Zoom In
+=========================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .7s ease forwards;
+
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   Pulse
+=========================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ===========================
+   Gradient Animation
+=========================== */
+
+@keyframes gradient{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+.animated-gradient{
+
+    background:linear-gradient(
+        -45deg,
+        #3B82F6,
+        #8B5CF6,
+        #2563EB,
+        #7C3AED
+    );
+
+    background-size:300% 300%;
+
+    animation:gradient 8s ease infinite;
+
+}
+
+/* ===========================
+   Glow
+=========================== */
+
+.glow{
+
+    box-shadow:
+        0 0 20px rgba(59,130,246,.35),
+        0 0 40px rgba(139,92,246,.25);
+
+}
+
+/* ===========================
+   Card Hover
+=========================== */
+
+.hover-card{
+
+    transition:.4s;
+
+}
+
+.hover-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   Button Hover
+=========================== */
+
+.btn-hover{
+
+    transition:.35s;
+
+}
+
+.btn-hover:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================
+   Loader Spin
+=========================== */
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.loader{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,.2);
+
+    border-top-color:#3B82F6;
+
+    animation:spin .8s linear infinite;
+
+}
+
+/* ===========================
+   Back To Top
+=========================== */
+
+#backToTop{
+
+    transition:.35s;
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   Social Icons
+=========================== */
+
+.social-icon{
+
+    transition:.35s;
+
+}
+
+.social-icon:hover{
+
+    transform:translateY(-5px) scale(1.1);
+
+}
+
+/* ===========================
+   Project Image Hover
+=========================== */
+
+.project-image{
+
+    overflow:hidden;
+
+}
+
+.project-image img{
+
+    transition:.5s;
+
+}
+
+.project-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   Navigation Hover
+=========================== */
+
+.nav-link{
+
+    position:relative;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#3B82F6;
+
+    transition:.35s;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   Scroll Progress Bar
+=========================== */
+
+#progressBar{
+
+    transition:width .15s linear;
+
+}
+
+/* ===========================
+   Typing Cursor
+=========================== */
+
+.typed-cursor{
+
+    color:#60A5FA;
+
+    font-size:30px;
+
+}
+
+/* ===========================
+   Glass Hover
+=========================== */
+
+.glass{
+
+    transition:.35s;
+
+}
+
+.glass:hover{
+
+    border-color:rgba(96,165,250,.4);
+
+}
+
+/* ===========================
+   Smooth Hover Scale
+=========================== */
+
+.scale-hover{
+
+    transition:.35s;
+
+}
+
+.scale-hover:hover{
+
+    transform:scale(1.05);
+
+}

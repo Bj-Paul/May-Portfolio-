@@ -1,0 +1,286 @@
+/* ==========================================
+   RESPONSIVE CSS
+   Author: BJ Paul Cabunilas
+========================================== */
+
+/* =========================
+   Large Devices (1200px)
+========================= */
+
+@media (max-width:1200px){
+
+    .container{
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+}
+
+
+/* =========================
+   Laptop (1024px)
+========================= */
+
+@media (max-width:1024px){
+
+    h1{
+        font-size:3rem !important;
+    }
+
+    h2{
+        font-size:2.3rem !important;
+    }
+
+    .hero-title{
+        font-size:3.2rem;
+    }
+
+    .grid{
+        gap:2rem;
+    }
+
+}
+
+
+/* =========================
+   Tablet (992px)
+========================= */
+
+@media (max-width:992px){
+
+    section{
+        padding:90px 0;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-image{
+        margin-top:50px;
+    }
+
+    .about-content{
+        margin-top:40px;
+    }
+
+}
+
+
+/* =========================
+   Tablet (768px)
+========================= */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:2.6rem !important;
+    }
+
+    h2{
+        font-size:2rem !important;
+    }
+
+    h3{
+        font-size:1.5rem !important;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .hero-title{
+        font-size:2.8rem;
+    }
+
+    .glass{
+        padding:20px;
+    }
+
+    .card{
+        margin-bottom:20px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .section-subtitle{
+        font-size:15px;
+    }
+
+}
+
+
+/* =========================
+   Mobile (640px)
+========================= */
+
+@media (max-width:640px){
+
+    body{
+        font-size:15px;
+    }
+
+    h1{
+        font-size:2.2rem !important;
+    }
+
+    h2{
+        font-size:1.8rem !important;
+    }
+
+    h3{
+        font-size:1.3rem !important;
+    }
+
+    .hero-title{
+        font-size:2.2rem;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-buttons a{
+        width:100%;
+        text-align:center;
+    }
+
+    .glass{
+        border-radius:20px;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile (480px)
+========================= */
+
+@media (max-width:480px){
+
+    section{
+        padding:70px 0;
+    }
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .btn-primary,
+    .btn-outline{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .icon-box{
+
+        width:60px;
+        height:60px;
+        font-size:24px;
+
+    }
+
+}
+
+
+/* =========================
+   Mobile Navigation
+========================= */
+
+@media (max-width:1024px){
+
+    #mobile-menu{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* =========================
+   Project Cards
+========================= */
+
+@media (max-width:768px){
+
+    #projects .grid{
+
+        grid-template-columns:1fr !important;
+
+    }
+
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+@media (max-width:768px){
+
+    #skills .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+@media (max-width:768px){
+
+    #contact .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+@media (max-width:640px){
+
+    footer{
+
+        text-align:center;
+
+    }
+
+    footer .flex{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
